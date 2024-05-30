@@ -1,0 +1,67 @@
+mnist_mini:
+  SGD:  # test acc: 96.4% after 50 epochs
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.3
+
+  # general
+  batch_size: 500
+  num_epochs: 50
+
+fmnist_mlp:
+  SGD:  # test acc: 88% after 50 epochs
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.1
+  # general
+  batch_size: 500
+  num_epochs: 50
+
+fmnist_2c2d:
+  SGD:  # test acc: xx% after xx
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.216053242325031
+  # general
+  batch_size: 128
+  num_epochs: 100
+
+cifar10det_3c3d:
+  SGD:  # test acc: 75.34% after 50 epochs
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.022610510812765
+  batch_size: 128
+  num_epochs: 100
+
+cifar10_3c3d:
+  SGD:  # best test acc: 82.82%
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.022610510812765
+  batch_size: 128
+  num_epochs: 100
+
+cifar100det_allcnnc:
+  SGD:  # test acc: xx% after 350 epochs (59?)
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.16579130972807002
+  batch_size: 256
+  num_epochs: 350 # 350
+
+cifar100_allcnnc:
+  SGD:  # test acc: 59.88% after 350 epochs
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.16579130972807002
+  batch_size: 256
+  num_epochs: 350
+
+imagenetdet_resnet18:
+  SGD:  # test acc: 17.33% after 1 epoch
+    lr_schedule: null
+    opt_hpars:
+      lr: 0.1  # Based on ImageNet and AdaBelief papers
+  batch_size: 150
+  num_epochs: 50
