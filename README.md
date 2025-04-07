@@ -1,5 +1,6 @@
 # Connecting Parameter Magnitudes and Hessian Eigenspaces at Scale using Sketched Methods
 
+
 **Figure 1: Overlap between top-k parameter magnitude masks and top-k Hessian eigenspaces is consistently and substantially above random chance**
 
 ![Visual Abstract](assets/visual_abstract.jpg)
@@ -10,7 +11,21 @@
 
 
 
-This repository contains general functionality to perform sketched eigendecompositions on matrix-free linear operators, such as the Hessian for deep learning, as well as to support the experiments done as part of the paper. Main entry points are the Python/SLURM scripts located at the root of the repository, and the Jupyter notebooks inside the `assets` directory. Specifically:
+This repository contains supporting material for our paper:
+
+```
+@article{
+fernandez2025connecting,
+title={Connecting Parameter Magnitudes and Hessian Eigenspaces at Scale using Sketched Methods},
+author={Andres Fernandez and Frank Schneider and Maren Mahsereci and Philipp Hennig},
+journal={Transactions on Machine Learning Research},
+year={2025},
+url={https://openreview.net/forum?id=yGGoOVpBVP},
+note={}
+}
+```
+
+Specifically, it contains general functionality to perform sketched eigendecompositions on matrix-free linear operators, such as the Hessian for deep learning, as well as to support the experiments done as part of the paper. Main entry points are the Python/SLURM scripts located at the root of the repository, and the Jupyter notebooks inside the `assets` directory:
 
 * [01_crystallization_and_grassmannians.ipynb](assets/notebooks/01_crystallization_and_grassmannians.ipynb): This notebook renders figures showing mask/Hessian early crystallization, as well as the reviewed Grassmannian metrics for the 16x16 MNIST experiment.
 
@@ -41,7 +56,19 @@ This repository contains general functionality to perform sketched eigendecompos
 To reproduce the results from the paper, run the corresponding notebooks/scripts. Example runs with ad-hoc values can be found below (see paper and corresponding docstrings for more details). Note that the large-scale experiments are meant to be run on a [Slurm](https://slurm.schedmd.com/documentation.html) computational cluster, and have not been fully tested otherwise. Furthermore, the Slurm scripts have been redacted for anonymization purposes.
 
 
+
 ### Installation:
+
+
+Note that, since its development, [the `skerch` Python library has been made available via PyPI](https://pypi.org/project/skerch/) and more recent versions can be easily installed via:
+
+```
+pip install skerch
+```
+
+
+---
+
 
 For deep learning numerical computations, we use [PyTorch](https://pytorch.org/) and [CurvLinOps](https://github.com/f-dangel/curvlinops). To organize the deep learning experiments, we use [DeepOBS](https://github.com/fsschneider/DeepOBS).
 
