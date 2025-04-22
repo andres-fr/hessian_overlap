@@ -1,6 +1,16 @@
 # Connecting Parameter Magnitudes and Hessian Eigenspaces at Scale using Sketched Methods
 
 
+<div align="center">
+
+
+
+|                                                             5min video                                                                 |                                                                             Discussion                                                                             |                                                                                                  Paper                                                                                                 |                                                                                    skerch                                                                                    |
+|:--------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| [![YouTube video explanation](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tV7hC65vQp4) | [![OpenReview discussion](https://img.shields.io/badge/OpenReview-8c1b13)](https://openreview.net/forum?id=yGGoOVpBVP) | [![arXiv paper](https://img.shields.io/badge/arxiv-b31b1b)](https://arxiv.org/abs/2504.14701) | [![Skerch library](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/andres-fr/skerch) | 
+
+</div>
+
 **Figure 1: Overlap between top-k parameter magnitude masks and top-k Hessian eigenspaces is consistently and substantially above random chance**
 
 ![Visual Abstract](assets/visual_abstract.jpg)
